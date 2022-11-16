@@ -87,8 +87,6 @@ p{
  /* Title Image */
 
  .title-image{
-    height: 70%;
-    width: 20%;
     transform: rotate(25deg);
     position: absolute;
  }
@@ -200,14 +198,38 @@ p{
     text-align: center;
 
   }
-
-
     .title-image {
      position: static;
      transform: rotate(0);
     }
 }
 
+@media (max-width : 625px) {
+
+    #title {
+      text-align: center;
+  
+    }
+      .title-image {
+        top: 50px;
+        height: 800px;
+        width: 400px;
+        object-fit: contain;
+       position: static;
+       transform: rotate(0);
+      }
+  }
+  
 
 
 
+  @media only screen and (max-width: 600px) {
+    .title-image {
+      top: 100px;
+      height: 800px;
+      width: 400px;
+      object-fit: contain;
+     transform: rotate(0);
+    }
+
+  }
